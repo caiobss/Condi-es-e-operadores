@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <nav>
+        Velocidade <input type="number" name="" id="a">km/h
+    <input type="button" value="Calcular" onclick="clicar()">
+    <div id="c">resultado</div>
+    </nav>
+
+    <article>
+        Em que país você mora? <input id="ah" type="text">
+        <input type="button" value="confirmar" onclick="confirmar()">
+        <div id="bh">Resultado</div>
+    </article>
+
+    <section>
+        Digite a sua cor preferida <input type="text" name="" id="n1">
+        <input type="button" value="Confirmar a cor" onclick="cor()">
+        <div id="result">Resultado</div>
+
+    </section>
+
+    <script>
+        function clicar(){
+            var b = document.getElementById('a')
+            var vel = Number(b.value)
+            var result = document.getElementById('c')
+            result.innerHTML=(`${vel}km/h`)
+            if(vel>60){
+                result.innerHTML=(`sua velocidade é ${vel}km/h que ultrapassa a velocidade recomendada, <strong>você esta multado!!!</strong>`)
+            }
+            result.innerHTML +='<p>dirija com segurança</p>'
+        }
+        function confirmar(){
+            var país= document.getElementById('ah')
+            var s = (ah.value)
+            var confirmar=document.getElementById('bh')
+            if(s=='brasil'){
+                confirmar.innerHTML = `${s}, o melhor pais do mundo`
+                confirmar.style.background ='green'
+            }else if(s=='argentina'){
+                confirmar.innerHTML = (`${s} é o pior pais`)
+                confirmar.style.background='red'
+            }else{
+                confirmar.innerHTML=(`${s} esse é o seu pais`)
+                confirmar.style.background='green'
+            }
+            confirmar.innerHTML+=('<p>obrigado por responder</p>')  
+        }
+        function cor(){
+            var m = document.getElementById('n1')
+            var f = (n1.value)
+            var n = document.getElementById('result')
+            if(f=='caio'){
+                result.innerHTML=`${f} muito lindo`
+            }else if(f=='bianca'){
+                result.innerHTML=`${f} muito feia`
+            }else{
+                result.innerHTML=`Seu nome é: ${f}`
+            }
+            result.innerHTML+=`<p>Obrigado por responder</p>`
+            
+        }
+    </script>
+</body>
+</html>
