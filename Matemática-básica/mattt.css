@@ -1,0 +1,24 @@
+body{
+    background: rgb(215, 228, 217);
+    margin: 0px;
+}
+header, h1{
+    background: rgb(32, 32, 32);
+    height: 80px;
+    color: rgb(231, 227, 220);
+    margin: 0px;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+}
+nav,footer,article, section,#expy{
+ margin: 20px;
+ 
+}
+input{
+    padding: 20px;
+}
+#bss{
+    background-color: rgba(30, 61, 163, 0.877);
+    color: cornsilk;
+}
