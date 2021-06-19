@@ -41,3 +41,12 @@ function exp(){
     rexp.innerHTML=(`${nexp**nexp2}`)
 
 }
+function resto(){
+    var resto1 = document.getElementById('resto1')
+    var resto2 = document.getElementById('resto2')
+    var gp1 = Number(resto1.value)
+    var gp2 = Number(resto2.value)
+    var resto3 = document.getElementById('resto_result')
+    resto3.innerHTML = `${gp1%gp2}`
+    
+}

@@ -1,6 +1,10 @@
 body{
     background: rgb(215, 228, 217);
     margin: 0px;
+    height: 3000px;
+}
+#all_page{
+    margin-top: 120px;
 }
 header, h1{
     background: rgb(32, 32, 32);
@@ -10,8 +14,9 @@ header, h1{
     padding-left: 10px;
     display: flex;
     align-items: center;
+    position: fixed; top: 0%; left: 0%; width: 100%;
 }
-nav,footer,article, section,#expy{
+nav,footer,article, section,#expy,#resto_da_divisão{
  margin: 20px;
  
 }
